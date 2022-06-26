@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Orbitron:wght@500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+<h1>Alarm Clock</h1>
+<div class="container">
+
+   <span id="hours">00</span>
+   <span class="colon">:</span>
+   <span id="minutes">00</span>
+   <span class="colon">:</span>
+   <span id="seconds">00</span>
+   <span id="session">AM</span>
+</div>
+<div class="alarm">
+<div class="getAlarmTime">
+  <input onchange="setAlarmTime(this.value)" type="datetime-local" name="alarmTime">
+</div>
+<div class="controls">
+  <div class="control1">
+  <button onclick="setAlarm()" type="button" name="button" class="button set-alarm">Set alarm</button>
+  </div>
+  <div class="control2">
+  <h2></h2>
+  <button onclick="clearAlarm()" type="button" name="button" class="button clear-alarm">Clear alarm</button>
+</div>
+</div>
+</div>
+<p>&copy 2022 Ziraddin</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
